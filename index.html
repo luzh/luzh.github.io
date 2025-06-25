@@ -2,9 +2,235 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume of Lu Zhang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        .section-header {
+            @apply flex font-sans relative;
+        }
+        .section-header h2 {
+            @apply text-2xl font-bold text-blue-800 mr-1 z-10;
+        }
+        .section-header-line {
+            @apply flex-grow h-[1.5px] bg-blue-600 relative top-[1.5em];
+        }
+
+        .role-title {
+            @apply text-base font-semibold;
+        }
+        .role-dates {
+            @apply text-sm text-gray-800;
+        }
+        .role-description-list {
+            @apply text-sm text-gray-600 list-disc pl-5;
+        }
+
+        .pub-title {
+            @apply text-base font-semibold;
+        }
+        .pub-authors {
+            @apply text-sm italic text-gray-800;
+        }
+        .pub-venue {
+            @apply text-sm text-gray-600;
+        }
+        .pub-doi {
+            @apply text-xs text-gray-600;
+        }
+    </style>
+
+    <style>
+        @media print {
+            @page {
+                /* Page margins: top, right, bottom, left */
+                margin: 0.75in 0.75in 0.75in 0.75in;
+            }
+        }
+    </style>
 </head>
-<body>
-    <h1>Hello there!</h1>
+
+<body class="bg-white text-black font-sans">
+    <!-- Maximum width set to 8.5in for printing-friendly -->
+    <div class="max-w-[8.5in] mx-auto mb-8 px-2 bg-white">
+        <!-- Header -->
+        <header class="text-lg mb-auto">
+            <h1 class="flex items-center justify-between mb-auto">
+                <p class="text-3xl font-bold text-blue-800">Lu Zhang, Ph.D.</p>
+                <!-- Print Button -->
+                <button onclick="window.print()"
+                    class="text-xl font-semibold text-blue-600 hover:text-blue-800 transition px-2 py-1 rounded print:hidden">
+                    Print / Save as PDF
+                </button>
+            </h1>
+            <!-- <p class="text-xl text-gray-800">Sr. Silicon Engineer &bull; Google &bull; Mountain View, CA, USA</p> -->
+            <p class="text-xl text-gray-800">Sr. Silicon Engineer &bull; <span class="text-blue-600">G</span><span class="text-red-600">o</span><span class="text-yellow-500">o</span><span class="text-blue-600">g</span><span class="text-green-600">l</span><span class="text-red-600">e</span> &bull; Mountain View, CA, USA</p>
+            <p class="text-md text-gray-600">
+                <a href="https://linkedin.com/in/luzhprofile" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a> &bull;
+                <a href="https://resume.zhang.lu" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">resume.zhang.lu</a>
+            </p>
+        </header>
+
+        <!-- Skills Section -->
+        <section class="mb-auto">
+            <div class="section-header">
+                <h2>Skills</h2>
+                <div class="section-header-line"></div>
+            </div>
+            <ul class="text-sm list-disc pl-5">
+                <li>Programming Languages: Python &bull; C &bull; C++ &bull; SystemVerilog &bull; Bash</li>
+                <li>System and Software Frameworks: Linux Kernel &bull; Little Kernel (LK) &bull; LLVM &bull; PyTorch</li>
+                <li>Hardware Architecture: ARM and AMBA &bull; ARM-based SoC &bull; SIMD & Vector Processing</li>
+                <li>Silicon Engineering: RTL Design &bull; Simulation & Emulation &bull; FPGA Prototyping &bull; Silicon Validation</li>
+                <li>EDA Tools: VCS &bull; Design Compiler &bull; Vivado &bull; Vitis HLS &bull; ZeBu Emulation</li>
+                <li>Version Control and Code Review: Git &bull; Gerrit &bull; GitHub</li>
+                <li>DevOps: Make &bull; CMake &bull; Jenkins &bull; Tooling & Process Automation</li>
+            </ul>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="mb-auto">
+            <div class="section-header">
+                <h2>Work Experience</h2>
+                <div class="section-header-line"></div>
+            </div>
+            <div class="mb-auto">
+                <p class="role-title">Sr. Silicon Engineer &bull; Google</p>
+                <p class="role-dates">October 2019 - Present &bull; Mountain View, California, USA</p>
+                <ul class="role-description-list">
+                    <li>Leading SoC emulation builds for multiple generations of Google Pixel phones.</li>
+                    <li>Developing supporting tools to aid pre-silicon software development in emulation.</li>
+                    <li>Developed a continuous integration and automation process for silicon emulation.</li>
+                    <li>Developed IP-level hybrid emulation platforms (hardware emulator and software CPU models).</li>
+                    <li>Validated performance of CPU cache, ISP, and TPU hardware.</li>
+                    <!-- <li>Supported cross-functional emulation users and debugged both software and silicon issues.</li> -->
+                    <!-- <li>Validated Google ISP (Image Signal Processing) designs and uncovered critical hardware flaws.</li> -->
+                    <li>Developed a real-time VP9 encoder demo on FPGA.</li>
+                </ul>
+            </div>
+
+            <div class="mb-auto">
+                <p class="role-title">Ph.D. Researcher &bull; University of California - San Diego</p>
+                <p class="role-dates">September 2012 - October 2019 &bull; La Jolla, California, USA</p>
+                <ul class="role-description-list">
+                    <li>Built LLVM extensions for debugging persistent memory programs
+                        (GitHub:
+                        <a href="https://github.com/luzh/llvm-nvx" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">LLVM-NVX</a>).
+                    </li>
+                    <li>Researched software reliability for persistent memory
+                        (publications:
+                        <a href="https://dl.acm.org/doi/10.5555/3358807.3358884" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">ATC'19</a>,
+                        <a href="https://dl.acm.org/doi/10.1145/3132747.3132761" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">SOSP'17</a>).
+                    </li>
+                    <li>Researched cost‑effective ASIC design and automation
+                        (publication: <a href="https://dl.acm.org/doi/10.1145/3037697.3037749" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">ASPLOS'17</a>).
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-auto">
+                <p class="role-title">Silicon Engineer &bull; Intel</p>
+                <p class="role-dates">October 2010 - August 2012 &bull; Eindhoven, The Netherlands</p>
+                <ul class="role-description-list">
+                    <li>Developed memory access accelerators for matrix operations.</li>
+                    <li>Developed image processing accelerators for Intel's mobile SoCs.</li>
+                </ul>
+            </div>
+
+            <div class="mb-auto">
+                <p class="role-title">Researcher &bull; IMEC (Interuniversity Microelectronics Centre)</p>
+                <p class="role-dates">August 2009 - September 2010 &bull; Leuven, Belgium</p>
+                <ul class="role-description-list">
+                    <li>Researched stereo matching and viewpoint interpolation algorithms.</li>
+                    <li>Developed a hardware accelerator for stereo‑matching (similar to CNN,
+                        publication: <a href="https://dl.acm.org/doi/10.1145/1950413.1950428" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">FPGA'11</a>).
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-auto">
+            <div class="section-header">
+                <h2>Education</h2>
+                <div class="section-header-line"></div>
+            </div>
+            <div class="mb-auto">
+                <p class="role-title">Ph.D. in Computer Science and Engineering</p>
+                <p class="role-dates">University of California - San Diego &bull; La Jolla, California, USA</p>
+            </div>
+            <div class="mb-auto">
+                <p class="role-title">M.S. in Embedded Systems</p>
+                <p class="role-dates">Delft University of Technology &bull; Delft, The Netherlands</p>
+            </div>
+            <div class="mb-auto">
+                <p class="role-title">B.Eng. in Electrical Engineering</p>
+                <p class="role-dates">Shandong University &bull; Ji'nan, Shandong, China</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="mb-auto">
+            <div class="section-header">
+                <h2>Academic Service</h2>
+                <div class="section-header-line"></div>
+            </div>
+            <p class="text-sm text-gray-800 mb-auto">Served on the technical program committees for the following IEEE conferences:</p>
+            <ul class="list-disc pl-5 text-sm">
+                <li><strong>AICAS 2024 - 2025</strong>: IEEE Intl. Conference on Artificial Intelligence Circuits and Systems</li>
+                <li><strong>ISCAS 2024</strong>: IEEE Intl. Symposium on Circuits and Systems</li>
+            </ul>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="mb-auto">
+            <div class="section-header">
+                <h2>Publications</h2>
+                <div class="section-header-line"></div>
+            </div>
+            <p class="text-base font-semibold text-gray-800 mb-auto">
+                <a href="https://scholar.google.com/citations?user=Unc3aw4AAAAJ&hl=en" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google Scholar Profile</a>
+                &bull; 1168 citations as of June 2025
+            </p>
+            <div class="mb-auto">
+                <p class="pub-title">Pangolin: A Fault‑Tolerant Persistent Memory Programming Library</p>
+                <p class="pub-authors">Lu Zhang and Steven Swanson</p>
+                <p class="pub-venue">2019 USENIX Annual Technical Conference (ATC) &bull; 2019</p>
+                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.5555/3358807.3358884" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.5555/3358807.3358884</a></p>
+            </div>
+            <div class="mb-auto">
+                <p class="pub-title">Basic Performance Measurements of the Intel Optane DC Persistent Memory Module</p>
+                <p class="pub-authors">Joseph Izraelevitz, Jian Yang, Lu Zhang, Juno Kim, Xiao Liu, Amirsaman Memaripour, Yun Joon Soh,</p>
+                <p class="pub-authors">Zixuan Wang, Yi Xu, Subramanya R. Dulloor, Jishen Zhao, and Steven Swanson</p>
+                <p class="pub-venue">arXiv: Distributed, Parallel, and Cluster Computing &bull; 2019</p>
+                <p class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.1903.05714" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.48550/arXiv.1903.05714</a></p>
+            </div>
+            <div class="mb-auto">
+                <p class="pub-title">NOVA‑Fortis: A Fault‑Tolerant Non‑Volatile Main Memory File System</p>
+                <p class="pub-authors">Jian Xu, Lu Zhang, Amirsaman Memaripour, Akshatha Gangadharaiah, Amit Borase, Tamires Da Silva,</p>
+                <p class="pub-authors">Andy Rudoff, and Steven Swanson</p>
+                <p class="pub-venue">ACM Symposium on Operating Systems Principles (SOSP) &bull; 2017</p>
+                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.1145/3132747.3132761" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.1145/3132747.3132761</a></p>
+            </div>
+            <div class="mb-auto">
+                <p class="pub-title">Moonwalk: NRE Optimization in ASIC Clouds</p>
+                <p class="pub-authors">Moein Khazraee, Lu Zhang, Luis Vega, and Michael Taylor</p>
+                <p class="pub-venue">ACM Intl. Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) &bull; 2017</p>
+                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.1145/3037697.3037749" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.1145/3037697.3037749</a></p>
+            </div>
+            <div class="mb-auto">
+                <p class="pub-title">Power Side Channels in Security ICs: Hardware Countermeasures</p>
+                <p class="pub-authors">Lu Zhang, Luis Vega, and Michael Taylor</p>
+                <p class="pub-venue">arXiv: Cryptography and Security &bull; 2019</p>
+                <p class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.1605.00681" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.48550/arXiv.1605.00681</a></p>
+            </div>
+            <div class="mb-auto">
+                <p class="pub-title">Real‑time High‑Definition Stereo Matching on FPGA</p>
+                <p class="pub-authors">Lu Zhang, Ke Zhang, Tian Sheuan Chang, Gauthier Lafruit, Georgi Kuzmanov, and Diederik Verkest</p>
+                <p class="pub-venue">ACM Symposium on Field Programmable Gate Arrays (FPGA) &bull; 2011</p>
+                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.1145/1950413.1950428" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.1145/1950413.1950428</a></p>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
