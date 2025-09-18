@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,10 +64,20 @@
                     Print / Save as PDF
                 </button>
             </h1>
-            <p class="text-xl text-gray-800">Sr. Silicon Engineer &bull; <span class="text-blue-600">G</span><span class="text-red-600">o</span><span class="text-yellow-500">o</span><span class="text-blue-600">g</span><span class="text-green-600">l</span><span class="text-red-600">e</span> &bull; Mountain View, CA, USA</p>
+            <!--
+            <p class="text-xl text-gray-800">Sr. Silicon Engineer &bull; <span class="text-blue-600">G</span><span
+                class="text-red-600">o</span><span class="text-yellow-500">o</span><span
+                class="text-blue-600">g</span><span class="text-green-600">l</span><span
+                class="text-red-600">e</span> &bull; Mountain View, CA, USA</p>
+            -->
+            <p class="text-xl text-gray-800">Sr. Silicon Emulation Engineer &bull; Google &bull; Mountain View, CA, USA</p>
             <p class="text-md text-gray-600">
-                <a class="text-gray-600">Contact: </a>
-                <a href="https://linkedin.com/in/luzhprofile" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+                <a href="https://linkedin.com/in/luzhprofile" target="_blank"
+                   class="text-blue-600 hover:underline">LinkedIn</a> &bull;
+                <a href="https://scholar.google.com/citations?user=Unc3aw4AAAAJ&hl=en"
+                   class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google Scholar</a> &bull;
+                <a href="https://github.com/luzh?tab=repositories"
+                   class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">GitHub</a>
             </p>
         </header>
 
@@ -77,13 +88,10 @@
                 <div class="section-header-line"></div>
             </div>
             <ul class="text-sm list-disc pl-5">
-                <li>Programming Languages: Python &bull; C &bull; C++ &bull; SystemVerilog &bull; Bash</li>
-                <li>System and Software Frameworks: Linux Kernel &bull; Little Kernel (LK) &bull; LLVM</li>
-                <li>Hardware Architecture: ARM and AMBA &bull; ARM-based SoC &bull; SIMD & Vector Processing</li>
-                <li>Silicon Engineering: RTL Design &bull; Simulation & Emulation &bull; FPGA Prototyping &bull; Silicon Validation</li>
-                <li>EDA Tools: VCS &bull; Design Compiler &bull; Vivado &bull; Vitis HLS &bull; ZeBu Emulation</li>
-                <li>Version Control and Code Review: Git &bull; Gerrit &bull; GitHub</li>
-                <li>DevOps: Make &bull; CMake &bull; Jenkins &bull; Tooling & Process Automation</li>
+                <li><b>Hardware/Emulation</b>: RTL &bull; SystemVerilog &bull; Tcl &bull; ZeBu &bull; HAPS &bull; FPGA &bull; Hybrid Emulation</li>
+                <li><b>Software/Programming</b>: Python &bull; C/C++ &bull; Bash &bull; LLVM &bull; Linux kernel</li>
+                <li><b>Infrastructure & DevOps</b>: Make &bull; Bazel &bull; Jenkins &bull; Git/Gerrit &bull; CI/CD Automation</li>
+                <li><b>Domain Expertise</b>: SoC Architecture (ARM, ISP, TPU, Cache/Memory) &bull; Silicon Validation</li>
             </ul>
         </section>
 
@@ -94,15 +102,21 @@
                 <div class="section-header-line"></div>
             </div>
             <div class="mb-auto">
-                <p class="role-title">Sr. Silicon Engineer &bull; Google</p>
+                <p class="role-title">Sr. Silicon Emulation Engineer &bull; Google</p>
                 <p class="role-dates">October 2019 - Present &bull; Mountain View, California, USA</p>
                 <ul class="role-description-list">
-                    <li>Leading SoC emulation builds for multiple generations of Google Pixel phones.</li>
-                    <li>Working with cross-functional teams to streamline silicon emulation workflow.</li>
-                    <li>Developed a continuous integration and automation process for silicon emulation.</li>
-                    <li>Developed IP-level hybrid emulation platforms (hardware emulator and software CPU models).</li>
-                    <li>Validated performance of CPU cache, ISP, and TPU hardware.</li>
-                    <li>Developed a real-time VP9 encoder demo on FPGA.</li>
+                    <li>Accelerated build turnaround by 50% with an automated, reproducible cloud-based build & deployment
+                        pipeline for Tensor SoC emulation, enabling multi-generational platform support.</li>
+                    <li>Architected IP-hybrid emulation platforms (CPU models + ZeBu/HAPS), delivering a 5× speedup in
+                        pre-silicon validation and enabling early software bring-up.</li>
+                    <li>Integrated MIPI CSI transactors and developed drivers — the first-of-its-kind in Google's emulation environment
+                        — enabling emulated camera streams and expanding ISP validation coverage.</li>
+                    <li>Validated high-impact IPs (CPU cache, ISP, TPU) across emulation and silicon, ensuring system-level
+                        functionality and performance correctness.</li>
+                    <li>Partnered cross-functionally with silicon design, DV, and software teams to streamline emulation model deployment,
+                        bring-up, regression, and validation cycles.</li>
+                    <li>Collaborate with emulation vendors (mainly Synopsys) to drive tool feature development and resolve critical field issues.</li>
+                    <li>Pioneer integration of GenAI tooling into emulation workflows for log triage and testbench support.</li>
                 </ul>
             </div>
 
@@ -110,38 +124,24 @@
                 <p class="role-title">Ph.D. Researcher &bull; University of California - San Diego</p>
                 <p class="role-dates">September 2012 - October 2019 &bull; La Jolla, California, USA</p>
                 <ul class="role-description-list">
-                    <li>Built LLVM extensions for debugging persistent memory programs
+                    <li>Built LLVM extensions for persistent memory debugging
                         (GitHub:
-                        <a href="https://github.com/luzh/llvm-nvx" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">LLVM-NVX</a>).
+                        <a href="https://github.com/luzh/llvm-nvx" class="text-blue-600 hover:underline" target="_blank"
+                            rel="noopener noreferrer">LLVM-NVX</a> and
+                        <a href="https://github.com/luzh/llvm-nvx" class="text-blue-600 hover:underline" target="_blank"
+                            rel="noopener noreferrer">NvxBench</a>).
                     </li>
-                    <li>Researched software reliability for persistent memory
-                        (publications:
-                        <a href="https://dl.acm.org/doi/10.5555/3358807.3358884" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">ATC'19</a>,
-                        <a href="https://dl.acm.org/doi/10.1145/3132747.3132761" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">SOSP'17</a>).
-                    </li>
-                    <li>Researched cost‑effective ASIC design and automation
-                        (publication: <a href="https://dl.acm.org/doi/10.1145/3037697.3037749" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">ASPLOS'17</a>).
-                    </li>
+                    <li>Published in top architecture and systems research venues (ATC, SOSP, ASPLOS) on persistent memory reliability and cost-effective ASIC design.</li>
+                    <li>Explored hardware/software co-design techniques and automation, now applied in SoC emulation.</li>
                 </ul>
             </div>
 
             <div class="mb-auto">
-                <p class="role-title">Silicon Engineer &bull; Intel</p>
-                <p class="role-dates">October 2010 - August 2012 &bull; Eindhoven, The Netherlands</p>
+                <p class="role-title">Earlier Career &bull; IMEC and Intel</p>
+                <p class="role-dates">August 2009 - August 2012 &bull; Belgium and The Netherlands</p>
                 <ul class="role-description-list">
-                    <li>Developed memory access accelerators for matrix operations.</li>
-                    <li>Developed image processing accelerators for Intel's mobile SoCs.</li>
-                </ul>
-            </div>
-
-            <div class="mb-auto">
-                <p class="role-title">Researcher &bull; IMEC (Interuniversity Microelectronics Centre)</p>
-                <p class="role-dates">August 2009 - September 2010 &bull; Leuven, Belgium</p>
-                <ul class="role-description-list">
-                    <li>Researched stereo matching and viewpoint interpolation algorithms.</li>
-                    <li>Developed a hardware accelerator for stereo‑matching (similar to CNN,
-                        publication: <a href="https://dl.acm.org/doi/10.1145/1950413.1950428" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">FPGA'11</a>).
-                    </li>
+                    <li>Intel: Developed matrix/image accelerators for mobile SoCs.</li>
+                    <li>IMEC: Developed a hardware accelerator for CNN-like stereo‑matching.</li>
                 </ul>
             </div>
         </section>
@@ -166,68 +166,81 @@
             </div>
         </section>
 
+        <!-- Publications Section -->
+        <section class="mb-auto">
+            <div class="section-header">
+                <h2>Selected Publications</h2>
+                <div class="section-header-line"></div>
+            </div>
+            <p class="text-base font-semibold text-gray-800 mb-auto">
+                <a href="https://scholar.google.com/citations?user=Unc3aw4AAAAJ&hl=en" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                &bull; 1199 citations as of September 2025
+            </p>
+            <div class="mb-auto">
+                <p class="pub-title">Pangolin: A Fault‑Tolerant Persistent Memory Programming Library</p>
+                <p class="pub-authors">Lu Zhang and Steven Swanson</p>
+                <p class="pub-venue">2019 USENIX Annual Technical Conference (ATC) &bull; 2019</p>
+                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.5555/3358807.3358884"
+                        class="text-blue-600 hover:underline" target="_blank"
+                        rel="noopener noreferrer">10.5555/3358807.3358884</a></p>
+            </div>
+            <div class="mb-auto">
+                <p class="pub-title">Basic Performance Measurements of the Intel Optane DC Persistent Memory Module</p>
+                <p class="pub-authors">Joseph Izraelevitz, Jian Yang, Lu Zhang, Juno Kim, Xiao Liu, Amirsaman
+                    Memaripour, Yun Joon Soh,</p>
+                <p class="pub-authors">Zixuan Wang, Yi Xu, Subramanya R. Dulloor, Jishen Zhao, and Steven Swanson</p>
+                <p class="pub-venue">arXiv: Distributed, Parallel, and Cluster Computing &bull; 2019</p>
+                <p class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.1903.05714"
+                        class="text-blue-600 hover:underline" target="_blank"
+                        rel="noopener noreferrer">10.48550/arXiv.1903.05714</a></p>
+            </div>
+            <div class="mb-auto">
+                <p class="pub-title">NOVA‑Fortis: A Fault‑Tolerant Non‑Volatile Main Memory File System</p>
+                <p class="pub-authors">Jian Xu, Lu Zhang, Amirsaman Memaripour, Akshatha Gangadharaiah, Amit Borase,
+                    Tamires Da Silva,</p>
+                <p class="pub-authors">Andy Rudoff, and Steven Swanson</p>
+                <p class="pub-venue">ACM Symposium on Operating Systems Principles (SOSP) &bull; 2017</p>
+                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.1145/3132747.3132761"
+                        class="text-blue-600 hover:underline" target="_blank"
+                        rel="noopener noreferrer">10.1145/3132747.3132761</a></p>
+            </div>
+            <div class="mb-auto">
+                <p class="pub-title">Moonwalk: NRE Optimization in ASIC Clouds</p>
+                <p class="pub-authors">Moein Khazraee, Lu Zhang, Luis Vega, and Michael Taylor</p>
+                <p class="pub-venue">ACM Intl. Conference on Architectural Support for Programming Languages and
+                    Operating Systems (ASPLOS) &bull; 2017</p>
+                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.1145/3037697.3037749"
+                        class="text-blue-600 hover:underline" target="_blank"
+                        rel="noopener noreferrer">10.1145/3037697.3037749</a></p>
+            </div>
+            <div class="mb-auto">
+                <p class="pub-title">Power Side Channels in Security ICs: Hardware Countermeasures</p>
+                <p class="pub-authors">Lu Zhang, Luis Vega, and Michael Taylor</p>
+                <p class="pub-venue">arXiv: Cryptography and Security &bull; 2019</p>
+                <p class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.1605.00681"
+                        class="text-blue-600 hover:underline" target="_blank"
+                        rel="noopener noreferrer">10.48550/arXiv.1605.00681</a></p>
+            </div>
+            <div class="mb-auto">
+                <p class="pub-title">Real‑time High‑Definition Stereo Matching on FPGA</p>
+                <p class="pub-authors">Lu Zhang, Ke Zhang, Tian Sheuan Chang, Gauthier Lafruit, Georgi Kuzmanov, and
+                    Diederik Verkest</p>
+                <p class="pub-venue">ACM Symposium on Field Programmable Gate Arrays (FPGA) &bull; 2011</p>
+                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.1145/1950413.1950428"
+                        class="text-blue-600 hover:underline" target="_blank"
+                        rel="noopener noreferrer">10.1145/1950413.1950428</a></p>
+            </div>
+        </section>
+
         <!-- Services Section -->
         <section class="mb-auto">
             <div class="section-header">
                 <h2>Academic Service</h2>
                 <div class="section-header-line"></div>
             </div>
-            <p class="text-sm text-gray-800 mb-auto">Served on the technical program committees for the following IEEE conferences:</p>
-            <ul class="list-disc pl-5 text-sm">
-                <li><strong>AICAS 2024 - 2025</strong>: IEEE Intl. Conference on Artificial Intelligence Circuits and Systems</li>
-                <li><strong>ISCAS 2024</strong>: IEEE Intl. Symposium on Circuits and Systems</li>
-            </ul>
-        </section>
-
-        <!-- Publications Section -->
-        <section class="mb-auto">
-            <div class="section-header">
-                <h2>Publications</h2>
-                <div class="section-header-line"></div>
-            </div>
-            <p class="text-base font-semibold text-gray-800 mb-auto">
-                <a href="https://scholar.google.com/citations?user=Unc3aw4AAAAJ&hl=en" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google Scholar Profile</a>
-                &bull; 1168 citations as of June 2025
-            </p>
-            <div class="mb-auto">
-                <p class="pub-title">Pangolin: A Fault‑Tolerant Persistent Memory Programming Library</p>
-                <p class="pub-authors">Lu Zhang and Steven Swanson</p>
-                <p class="pub-venue">2019 USENIX Annual Technical Conference (ATC) &bull; 2019</p>
-                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.5555/3358807.3358884" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.5555/3358807.3358884</a></p>
-            </div>
-            <div class="mb-auto">
-                <p class="pub-title">Basic Performance Measurements of the Intel Optane DC Persistent Memory Module</p>
-                <p class="pub-authors">Joseph Izraelevitz, Jian Yang, Lu Zhang, Juno Kim, Xiao Liu, Amirsaman Memaripour, Yun Joon Soh,</p>
-                <p class="pub-authors">Zixuan Wang, Yi Xu, Subramanya R. Dulloor, Jishen Zhao, and Steven Swanson</p>
-                <p class="pub-venue">arXiv: Distributed, Parallel, and Cluster Computing &bull; 2019</p>
-                <p class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.1903.05714" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.48550/arXiv.1903.05714</a></p>
-            </div>
-            <div class="mb-auto">
-                <p class="pub-title">NOVA‑Fortis: A Fault‑Tolerant Non‑Volatile Main Memory File System</p>
-                <p class="pub-authors">Jian Xu, Lu Zhang, Amirsaman Memaripour, Akshatha Gangadharaiah, Amit Borase, Tamires Da Silva,</p>
-                <p class="pub-authors">Andy Rudoff, and Steven Swanson</p>
-                <p class="pub-venue">ACM Symposium on Operating Systems Principles (SOSP) &bull; 2017</p>
-                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.1145/3132747.3132761" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.1145/3132747.3132761</a></p>
-            </div>
-            <div class="mb-auto">
-                <p class="pub-title">Moonwalk: NRE Optimization in ASIC Clouds</p>
-                <p class="pub-authors">Moein Khazraee, Lu Zhang, Luis Vega, and Michael Taylor</p>
-                <p class="pub-venue">ACM Intl. Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) &bull; 2017</p>
-                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.1145/3037697.3037749" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.1145/3037697.3037749</a></p>
-            </div>
-            <div class="mb-auto">
-                <p class="pub-title">Power Side Channels in Security ICs: Hardware Countermeasures</p>
-                <p class="pub-authors">Lu Zhang, Luis Vega, and Michael Taylor</p>
-                <p class="pub-venue">arXiv: Cryptography and Security &bull; 2019</p>
-                <p class="pub-doi">DOI: <a href="https://doi.org/10.48550/arXiv.1605.00681" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.48550/arXiv.1605.00681</a></p>
-            </div>
-            <div class="mb-auto">
-                <p class="pub-title">Real‑time High‑Definition Stereo Matching on FPGA</p>
-                <p class="pub-authors">Lu Zhang, Ke Zhang, Tian Sheuan Chang, Gauthier Lafruit, Georgi Kuzmanov, and Diederik Verkest</p>
-                <p class="pub-venue">ACM Symposium on Field Programmable Gate Arrays (FPGA) &bull; 2011</p>
-                <p class="pub-doi">DOI: <a href="https://dl.acm.org/doi/10.1145/1950413.1950428" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">10.1145/1950413.1950428</a></p>
-            </div>
+            <p class="text-sm text-gray-800 mb-auto">Program Committee: IEEE AICAS 2024-25, ISCAS 2024</p>
         </section>
     </div>
 </body>
+
 </html>
